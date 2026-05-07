@@ -29,14 +29,14 @@ const roadmapData = [
 
 export function RoadmapSection() {
   return (
-    <section className="py-32 relative overflow-hidden bg-black border-t border-white/10">
+    <section className="py-32 relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10 max-w-6xl">
         <div className="flex justify-between items-end mb-16">
           <div>
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 tracking-tight">
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 tracking-tight drop-shadow-md">
               Technical Roadmap
             </h2>
-            <p className="text-neutral-400 text-lg max-w-2xl">
+            <p className="text-white/60 text-lg max-w-2xl">
               A progressive decentralisation model leading towards a fully autonomous protocol and dedicated L1 architecture.
             </p>
           </div>
@@ -59,20 +59,20 @@ export function RoadmapSection() {
 
                     {/* Timeline dot and connecting line */}
                     <div className="absolute top-0 left-8 flex flex-col items-center">
-                      <div className="w-4 h-4 rounded bg-blue-500 border-2 border-black z-10 relative shadow-[0_0_15px_rgba(59,130,246,0.6)]" />
+                      <div className="w-4 h-4 rounded bg-pink-500 border-2 border-[#120a1f] z-10 relative shadow-[0_0_15px_rgba(236,72,153,0.6)] glow-card" />
                       <div className="w-px h-16 bg-gradient-to-b from-white/20 to-transparent"></div>
                     </div>
 
-                    <div className="text-sm font-mono text-blue-500 tracking-wider mb-4 ml-2">
+                    <div className="text-sm font-mono text-pink-400 tracking-wider mb-4 ml-2 glow-text">
                       {item.phase}
                     </div>
 
-                    <Card className="bg-[#0a0a0a] border-white/10 h-full rounded-xl hover:bg-[#111] hover:border-blue-500/30 transition-all shadow-lg">
+                    <Card className="bg-[#120a1f]/80 backdrop-blur-sm border-white/10 h-full rounded-xl hover:bg-[#160c26] hover:border-pink-500/30 transition-all shadow-lg glow-card">
                       <CardContent className="p-8">
                         <div className="flex items-center gap-4 mb-6">
                           <h3 className="text-xl font-bold text-white">{item.title}</h3>
                         </div>
-                        <p className="text-neutral-400 leading-relaxed font-light">
+                        <p className="text-white/60 leading-relaxed font-light">
                           {item.description}
                         </p>
                       </CardContent>
