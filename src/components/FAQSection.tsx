@@ -7,37 +7,36 @@ import {
 
 const faqs = [
   {
-    question: "What is DXUT?",
-    answer: "DXUT is the native utility token of the Dehix platform. It is designed to reward users for their contributions and active participation within the community."
+    question: "What is an NFWT?",
+    answer: "A Non-Fungible Wisdom Token (NFWT) is a specific type of Soulbound Token (SBT) used on the DEHIX platform. It permanently records oracle-verified professional achievements on-chain, effectively replacing self-reported resumes with unforgeable proof of skill."
   },
   {
-    question: "How do I participate in Dehix?",
-    answer: "You can participate by joining our community, contributing to web3 projects, hosting events, or raising funds for your initiatives."
+    question: "How do Flash Organizations work?",
+    answer: "Flash Organizations are computationally structured, cross-functional teams that form on demand. DEHIX uses an AI-driven squad assembly engine that reads verified NFWT data to automatically compute and deploy the optimal team for a specific project. Once the deliverables are met, the squad dissolves."
   },
   {
-    question: "Are there any fees?",
-    answer: "Platform usage is largely free for basic features. Advanced features like DAO creation and certain fundraising capabilities may have minimal network fees associated with the underlying blockchain."
+    question: "How does the protocol prevent fake credentials?",
+    answer: "All credentials must be verified by a hybrid oracle network (comprising decentralised nodes and human validators). Under the Stake for Truth (SFT) protocol, oracles must stake DXUT tokens to participate. Honest attestations are rewarded, while false claims result in the slashing of staked tokens."
   },
   {
-    question: "What is the Dehix Learn program?",
-    answer: "Dehix Learn is an initiative where we collaborate with web3 projects to create educational content aimed at upskilling learners in the web3 space."
+    question: "What is the utility of the DXUT token?",
+    answer: "DXUT is the native utility token of the DEHIX platform. It is used as the payment medium for escrow deposits, required for staking in the SFT Protocol (by oracles and interviewers), and provides voting rights in the DEHIX DAO governance."
   }
 ];
 
 export function FAQSection() {
   return (
-    <section className="py-24 relative">
+    <section className="py-32 relative bg-black">
       <div className="container mx-auto px-4 max-w-3xl">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 mb-4 text-pink-400 uppercase tracking-widest text-sm font-semibold">
-            <span className="w-8 h-[1px] bg-pink-400"></span>
+          <div className="inline-flex items-center gap-2 mb-4 text-blue-500 uppercase tracking-widest text-sm font-mono">
             FAQs
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
             Frequently Asked Questions
           </h2>
-          <p className="text-white/60 text-lg">
-            Find answers to common questions about Dehix and our ecosystem.
+          <p className="text-neutral-400 text-lg">
+            Understand the core mechanics of the DEHIX coordination protocol.
           </p>
         </div>
 
@@ -46,12 +45,12 @@ export function FAQSection() {
             <AccordionItem
               key={index}
               value={`item-${index}`}
-              className="bg-[#120a1f] border border-white/5 rounded-2xl px-6"
+              className="bg-[#0a0a0a] border border-white/10 rounded-xl px-6 data-[state=open]:border-blue-500/30 transition-colors"
             >
-              <AccordionTrigger className="text-left text-lg font-semibold text-white hover:text-pink-400 transition-colors py-6 hover:no-underline">
+              <AccordionTrigger className="text-left text-lg font-medium text-white hover:text-blue-400 transition-colors py-6 hover:no-underline">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-white/60 text-base pb-6 leading-relaxed">
+              <AccordionContent className="text-neutral-400 text-base pb-6 leading-relaxed">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>

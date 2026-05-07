@@ -11,35 +11,35 @@ import {
 
 const roadmapData = [
   {
-    quarter: "END OF Q1 2025",
-    title: "Dehix Learn Launch",
-    description: "We will collaborate with web3 projects, assisting them in building a community for their initiatives. Additionally, we will work together to create content aimed at upskilling learners.",
+    phase: "PHASE 1",
+    title: "Protocol Launch (Polygon EVM)",
+    description: "Deployment of the core protocol. Implementation of NFWT contracts, Escrow Vault, and the Flash Organization engine. Initial network secured by internal oracle nodes and human validators.",
   },
   {
-    quarter: "END OF Q2 2025",
-    title: "Beta Launch",
-    description: "We will launch our Beta version for all users, introducing new features for managing communities for web3 projects. Additionally, we will provide a platform for web3 projects to host events and raise funds.",
+    phase: "PHASE 2",
+    title: "Decentralisation & Growth (Months 3-6)",
+    description: "External audits (Code4rena / Certik). Onboarding of independent decentralised oracle nodes. Expansion of the Stake for Truth (SFT) incentive mechanisms and enterprise integrations.",
   },
   {
-    quarter: "END OF Q3 2025",
-    title: "DAO integration",
-    description: "We will launch a feature to create DAOs for projects with fundraising capabilities. Any user can contribute to the fundraising and become a part-owner of the project through the DAO.",
-  },
-  {
-    quarter: "END OF Q4 2025",
-    title: "Mega Dehix Update",
-    description: "We will fully launch the Dehix ecosystem for seamless integration across all individuals in the Web3 space. We will provide complete access to our ecosystem, including cross-chain across L1 chains.",
+    phase: "PHASE 3",
+    title: "Maturity & WorkChain (Month 12+)",
+    description: "Full transition to DAO governance. Introduction of Zero-Knowledge credential verification. Initial development and testing of WorkChain, a dedicated Layer 1 for professional identity.",
   }
 ];
 
 export function RoadmapSection() {
   return (
-    <section className="py-24 relative overflow-hidden">
-      <div className="container mx-auto px-4 relative z-10">
+    <section className="py-32 relative overflow-hidden bg-black border-t border-white/10">
+      <div className="container mx-auto px-4 relative z-10 max-w-6xl">
         <div className="flex justify-between items-end mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white drop-shadow-md">
-            Our Roadmap
-          </h2>
+          <div>
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 tracking-tight">
+              Technical Roadmap
+            </h2>
+            <p className="text-neutral-400 text-lg max-w-2xl">
+              A progressive decentralisation model leading towards a fully autonomous protocol and dedicated L1 architecture.
+            </p>
+          </div>
         </div>
 
         <div className="relative">
@@ -59,25 +59,20 @@ export function RoadmapSection() {
 
                     {/* Timeline dot and connecting line */}
                     <div className="absolute top-0 left-8 flex flex-col items-center">
-                      <div className="w-4 h-4 rounded-full bg-pink-500 border-4 border-[#0d0914] z-10 relative">
-                        <div className="absolute inset-0 rounded-full bg-pink-500 blur-sm"></div>
-                      </div>
+                      <div className="w-4 h-4 rounded bg-blue-500 border-2 border-black z-10 relative shadow-[0_0_15px_rgba(59,130,246,0.6)]" />
                       <div className="w-px h-16 bg-gradient-to-b from-white/20 to-transparent"></div>
                     </div>
 
-                    <div className="text-sm font-bold text-white/50 tracking-wider mb-4 ml-2">
-                      {item.quarter}
+                    <div className="text-sm font-mono text-blue-500 tracking-wider mb-4 ml-2">
+                      {item.phase}
                     </div>
 
-                    <Card className="bg-[#120a1f] border-white/5 h-full rounded-2xl hover:bg-[#160c26] transition-colors">
+                    <Card className="bg-[#0a0a0a] border-white/10 h-full rounded-xl hover:bg-[#111] hover:border-blue-500/30 transition-all shadow-lg">
                       <CardContent className="p-8">
                         <div className="flex items-center gap-4 mb-6">
-                          <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center border border-white/10">
-                            <div className="w-3 h-3 rounded-full bg-pink-400"></div>
-                          </div>
-                          <h3 className="text-2xl font-bold text-white">{item.title}</h3>
+                          <h3 className="text-xl font-bold text-white">{item.title}</h3>
                         </div>
-                        <p className="text-white/60 leading-relaxed">
+                        <p className="text-neutral-400 leading-relaxed font-light">
                           {item.description}
                         </p>
                       </CardContent>
@@ -88,9 +83,9 @@ export function RoadmapSection() {
               ))}
             </CarouselContent>
 
-            <div className="absolute -top-20 right-12 flex gap-2">
-              <CarouselPrevious className="relative static bg-white text-black hover:bg-gray-200 border-0 h-12 w-12 rounded-full translate-y-0 translate-x-0" />
-              <CarouselNext className="relative static bg-white text-black hover:bg-gray-200 border-0 h-12 w-12 rounded-full translate-y-0 translate-x-0" />
+            <div className="absolute -top-24 right-0 flex gap-2">
+              <CarouselPrevious className="relative static bg-white/5 hover:bg-white/10 text-white border border-white/10 h-12 w-12 rounded-lg translate-y-0 translate-x-0 transition-colors" />
+              <CarouselNext className="relative static bg-white/5 hover:bg-white/10 text-white border border-white/10 h-12 w-12 rounded-lg translate-y-0 translate-x-0 transition-colors" />
             </div>
 
           </Carousel>

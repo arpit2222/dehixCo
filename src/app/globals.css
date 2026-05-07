@@ -72,16 +72,6 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
-    background: radial-gradient(circle at top right, #34125b 0%, #150d24 50%, #0d0914 100%);
-    background-attachment: fixed;
+    @apply bg-black text-foreground antialiased;
   }
-}
-
-.glow-text {
-  text-shadow: 0 0 20px rgba(236, 72, 153, 0.5);
-}
-
-.glow-card {
-  box-shadow: 0 0 30px rgba(236, 72, 153, 0.1);
 }

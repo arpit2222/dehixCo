@@ -2,61 +2,69 @@ import { Button } from "./ui/button";
 
 export function HeroSection() {
   return (
-    <section className="relative pt-32 pb-20 min-h-[80vh] flex items-center overflow-hidden">
-      <div className="container mx-auto px-4 z-10 relative flex flex-col items-center text-center">
-        {/* Glow effect behind text */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-purple-600/20 blur-[120px] rounded-full -z-10" />
+    <section className="relative pt-32 pb-20 min-h-[85vh] flex items-center justify-center overflow-hidden bg-black selection:bg-blue-500/30">
+      {/* Refined subtle background grid */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff0a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0a_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,#000_70%,transparent_100%)] pointer-events-none" />
 
-        <div className="mb-4 inline-flex items-center gap-2 px-3 py-1 rounded-full border border-pink-500/30 bg-pink-500/10 text-pink-400 text-sm">
+      <div className="container mx-auto px-4 z-10 relative flex flex-col items-center text-center">
+        <div className="mb-6 inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-neutral-300 text-sm backdrop-blur-md">
           <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-pink-500"></span>
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
           </span>
-          V2 is live! Read the announcement
+          Whitepaper v2.0 is now live
         </div>
 
-        <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 max-w-4xl text-white drop-shadow-lg">
-          Connecting you with{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-500 glow-text">
-            Web3
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-8 max-w-5xl text-white">
+          Replacing resumes <br className="hidden md:block" />
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">
+            with ledgers.
           </span>
         </h1>
 
-        <p className="text-lg md:text-xl text-white/60 max-w-2xl mb-10 leading-relaxed">
-          Dehix brings you closer to the Web3 projects and resources. Collaborate, build, and earn across various L1s and L2s.
+        <p className="text-lg md:text-xl text-neutral-400 max-w-2xl mb-12 leading-relaxed font-light">
+          Bringing trust and coordination to the Web3 and AI talent ecosystem via oracle-verified Soulbound Tokens and on-demand Flash Organizations.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 w-full justify-center max-w-md">
-          <Button size="lg" className="bg-pink-600 hover:bg-pink-700 text-white rounded-full px-8 font-semibold w-full sm:w-auto h-12 shadow-[0_0_15px_rgba(236,72,153,0.5)]">
-            Explore Dehix
+          <Button size="lg" className="bg-white hover:bg-neutral-200 text-black rounded-md px-8 font-medium w-full sm:w-auto h-12 transition-all">
+            Read Whitepaper
           </Button>
-          <Button size="lg" variant="outline" className="border-white/20 hover:bg-white/10 text-white rounded-full px-8 font-semibold w-full sm:w-auto h-12 bg-transparent">
-            Join the community
+          <Button size="lg" variant="outline" className="border-white/20 hover:bg-white/10 text-white rounded-md px-8 font-medium w-full sm:w-auto h-12 bg-transparent transition-all">
+            Join Waitlist
           </Button>
         </div>
 
-        {/* Placeholder for the 3D cube illustration shown in the screenshot */}
-        <div className="mt-20 relative w-full max-w-3xl aspect-[16/9] bg-gradient-to-b from-white/5 to-transparent rounded-2xl border border-white/10 overflow-hidden flex items-center justify-center">
-          <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
-          <div className="w-32 h-32 md:w-48 md:h-48 border-4 border-pink-500/50 rounded-xl rotate-45 flex items-center justify-center glow-card shadow-[inset_0_0_50px_rgba(236,72,153,0.3)]">
-             <div className="w-16 h-16 md:w-24 md:h-24 border-4 border-purple-500/50 rounded-lg -rotate-45"></div>
+        {/* Minimalist Dashboard/Protocol visualization placeholder */}
+        <div className="mt-24 relative w-full max-w-4xl aspect-[21/9] bg-[#0a0a0a] rounded-xl border border-white/10 overflow-hidden flex flex-col shadow-2xl shadow-blue-900/20">
+          {/* Header */}
+          <div className="h-10 border-b border-white/10 bg-[#111] flex items-center px-4 gap-2">
+            <div className="w-3 h-3 rounded-full bg-neutral-800"></div>
+            <div className="w-3 h-3 rounded-full bg-neutral-800"></div>
+            <div className="w-3 h-3 rounded-full bg-neutral-800"></div>
+            <div className="ml-4 h-4 w-48 bg-neutral-800 rounded"></div>
+          </div>
+          {/* Body content abstraction */}
+          <div className="flex-1 p-6 flex gap-6">
+            <div className="w-1/3 flex flex-col gap-4">
+              <div className="h-8 w-24 bg-blue-500/20 rounded border border-blue-500/30 flex items-center px-2">
+                <div className="h-2 w-12 bg-blue-400/50 rounded"></div>
+              </div>
+              <div className="h-24 w-full bg-white/5 rounded border border-white/5"></div>
+              <div className="h-24 w-full bg-white/5 rounded border border-white/5"></div>
+            </div>
+            <div className="flex-1 flex flex-col gap-4">
+              <div className="h-full w-full bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:2rem_2rem] border border-white/5 rounded flex items-center justify-center relative">
+                 <div className="absolute w-32 h-32 border border-blue-500/30 rounded-full flex items-center justify-center">
+                    <div className="w-16 h-16 border border-indigo-500/50 rounded-full bg-blue-500/10 backdrop-blur-md"></div>
+                 </div>
+                 {/* Connection lines */}
+                 <div className="absolute top-1/2 left-10 w-24 h-[1px] bg-gradient-to-r from-transparent to-blue-500/50"></div>
+                 <div className="absolute top-1/2 right-10 w-24 h-[1px] bg-gradient-to-l from-transparent to-blue-500/50"></div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
-      {/* Abstract background waves/lines from screenshots */}
-      <div className="absolute bottom-0 left-0 right-0 h-64 overflow-hidden -z-10 opacity-30">
-        <svg viewBox="0 0 1440 320" className="absolute bottom-0 w-full h-full" preserveAspectRatio="none">
-          <path fill="none" stroke="url(#wave-gradient)" strokeWidth="2" d="M0,160 C320,300,420,0,740,120 C1060,240,1280,60,1440,120" />
-          <path fill="none" stroke="url(#wave-gradient)" strokeWidth="1" d="M0,200 C320,340,420,40,740,160 C1060,280,1280,100,1440,160" />
-          <defs>
-            <linearGradient id="wave-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#ec4899" stopOpacity="0" />
-              <stop offset="50%" stopColor="#a855f7" stopOpacity="1" />
-              <stop offset="100%" stopColor="#3b82f6" stopOpacity="0" />
-            </linearGradient>
-          </defs>
-        </svg>
       </div>
     </section>
   );
