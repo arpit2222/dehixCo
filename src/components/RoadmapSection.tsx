@@ -12,18 +12,18 @@ import {
 const roadmapData = [
   {
     phase: "PHASE 1",
-    title: "Protocol Launch (Polygon EVM)",
-    description: "Deployment of the core protocol. Implementation of NFWT contracts, Escrow Vault, and the Flash Organization engine. Initial network secured by internal oracle nodes and human validators.",
+    title: "AI Engine Alpha",
+    description: "Deployment of the core neural matching models. Implementation of AI-verified credentials and the Flash Organization engine. Initial network secured by internal models and human validators.",
   },
   {
     phase: "PHASE 2",
-    title: "Decentralisation & Growth (Months 3-6)",
-    description: "External audits (Code4rena / Certik). Onboarding of independent decentralised oracle nodes. Expansion of the Stake for Truth (SFT) incentive mechanisms and enterprise integrations.",
+    title: "Predictive Analytics & Growth",
+    description: "Expansion of the dataset and refining the predictive performance models to increase team compatibility scores. Onboarding of enterprise integrations.",
   },
   {
     phase: "PHASE 3",
-    title: "Maturity & WorkChain (Month 12+)",
-    description: "Full transition to DAO governance. Introduction of Zero-Knowledge credential verification. Initial development and testing of WorkChain, a dedicated Layer 1 for professional identity.",
+    title: "Maturity & Autonomous Assembly",
+    description: "Achieving fully autonomous squad assembly with zero human intervention. Introduction of predictive project lifecycle management.",
   }
 ];
 
@@ -34,10 +34,10 @@ export function RoadmapSection() {
         <div className="flex justify-between items-end mb-16">
           <div>
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 tracking-tight drop-shadow-md">
-              Technical Roadmap
+              Technology Roadmap
             </h2>
             <p className="text-white/60 text-lg max-w-2xl">
-              A progressive decentralisation model leading towards a fully autonomous protocol and dedicated L1 architecture.
+              A progressive development model leading towards a fully autonomous AI recruitment engine and predictive talent architecture.
             </p>
           </div>
         </div>

@@ -12,23 +12,23 @@ export function HeroSection() {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-pink-500"></span>
           </span>
-          Whitepaper v2.0 is now live
+          AI Engine Paper is now live
         </div>
 
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-8 max-w-5xl text-white drop-shadow-lg">
           Replacing resumes <br className="hidden md:block" />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-500 glow-text">
-            with ledgers.
+            with neural matching.
           </span>
         </h1>
 
         <p className="text-lg md:text-xl text-white/60 max-w-2xl mb-12 leading-relaxed">
-          Bringing trust and coordination to the Web3 and AI talent ecosystem via oracle-verified Soulbound Tokens and on-demand Flash Organizations.
+          Bringing precision and coordination to the talent ecosystem via AI-verified credentials and on-demand Flash Organizations.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 w-full justify-center max-w-md">
           <Button size="lg" className="bg-pink-600 hover:bg-pink-700 text-white rounded-full px-8 font-semibold w-full sm:w-auto h-12 shadow-[0_0_15px_rgba(236,72,153,0.5)] transition-all">
-            Read Whitepaper
+            Read AI Paper
           </Button>
           <Button size="lg" variant="outline" className="border-white/20 hover:bg-white/10 text-white rounded-full px-8 font-semibold w-full sm:w-auto h-12 bg-transparent transition-all">
             Join Waitlist

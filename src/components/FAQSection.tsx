@@ -7,20 +7,20 @@ import {
 
 const faqs = [
   {
-    question: "What is an NFWT?",
-    answer: "A Non-Fungible Wisdom Token (NFWT) is a specific type of Soulbound Token (SBT) used on the DEHIX platform. It permanently records oracle-verified professional achievements on-chain, effectively replacing self-reported resumes with unforgeable proof of skill."
+    question: "What is an AI-Verified Credential?",
+    answer: "An AI-Verified Credential replaces the traditional resume. Instead of self-reported claims, our neural networks continuously evaluate and score your real-world performance data, providing dynamic, unforgeable proof of your skills."
   },
   {
     question: "How do Flash Organizations work?",
-    answer: "Flash Organizations are computationally structured, cross-functional teams that form on demand. DEHIX uses an AI-driven squad assembly engine that reads verified NFWT data to automatically compute and deploy the optimal team for a specific project. Once the deliverables are met, the squad dissolves."
+    answer: "Flash Organizations are computationally structured, cross-functional teams that form on demand. DEHIX uses an AI-driven squad assembly engine that analyzes verified performance data to automatically compute and deploy the optimal team for your specific project."
   },
   {
-    question: "How does the protocol prevent fake credentials?",
-    answer: "All credentials must be verified by a hybrid oracle network (comprising decentralised nodes and human validators). Under the Stake for Truth (SFT) protocol, oracles must stake DXUT tokens to participate. Honest attestations are rewarded, while false claims result in the slashing of staked tokens."
+    question: "How does the AI prevent fake credentials?",
+    answer: "Our models utilize predictive performance analytics and continuous real-time feedback loops. The system cross-references claims against actual deliverable outcomes, ensuring that only verified skills are recognized and algorithmically matched to new opportunities."
   },
   {
-    question: "What is the utility of the DXUT token?",
-    answer: "DXUT is the native utility token of the DEHIX platform. It is used as the payment medium for escrow deposits, required for staking in the SFT Protocol (by oracles and interviewers), and provides voting rights in the DEHIX DAO governance."
+    question: "What powers the DEHIX AI Engine?",
+    answer: "The DEHIX AI Engine is powered by proprietary neural matching algorithms trained on vast datasets of professional interactions, team dynamics, and project outcomes. This allows it to predict team compatibility and project success rates with high accuracy."
   }
 ];
 
@@ -36,7 +36,7 @@ export function FAQSection() {
             Frequently Asked Questions
           </h2>
           <p className="text-white/60 text-lg">
-            Understand the core mechanics of the DEHIX coordination protocol.
+            Understand the core mechanics of the DEHIX AI engine.
           </p>
         </div>
 
